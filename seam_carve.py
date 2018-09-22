@@ -118,7 +118,6 @@ def seam_carve(image, mode, mask):
 
     
     
-
     if "vertical" in args:
         res = res.swapaxes(0,1)
         bool_mask = bool_mask.swapaxes(0,1)
