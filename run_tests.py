@@ -14,10 +14,10 @@ def check_test(output_dir, gt_dir):
             b = load(fgt)
             if a == b:
                 correct += 1
-            else:
-                for e in range(len(a)):
-                    print(a[e], '|' if a[e] != b[e] else ' ' , b[e])
-            print(i, correct)
+            # else:
+            #     for e in range(len(a)):
+            #         print(a[e], '|' if a[e] != b[e] else ' ' , b[e])
+            # print(i, correct)
     return 'Ok %d/8' % correct
 
 

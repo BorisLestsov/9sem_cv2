@@ -3,7 +3,9 @@ from sys import argv
 
 
 with open(argv[1], 'rb') as f:
-	a = pickle.load(f)
+	for j in range(8):
+		a = pickle.load(f)
 
-for i in a:
-	print(i)
+		if j == 4:
+			for i in a:
+				print(i)
